@@ -1,0 +1,22 @@
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>LP</th>
+      <th>Imię</th>
+      <th>Nazwisko</th>
+      <th>Wiek</th>
+      <th>Winner</th>
+      <th>Pensja</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employ of employList, let i = index">
+      <td scope="row">{{i + 1}}</td>
+      <td>{{employ.name}}</td>
+      <td>{{employ.lastName}}</td>
+      <td>{{employ.age}}</td>
+      <td>{{employ.winner}}</td>
+      <td>{{employ.salary}}</td>
+    </tr>
+  </tbody>
+</table>
